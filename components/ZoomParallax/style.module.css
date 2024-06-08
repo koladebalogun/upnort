@@ -1,0 +1,130 @@
+.container {
+  height: 300vh;
+  position: relative;
+}
+
+.container .sticky {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+}
+
+.container .sticky .el {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .sticky .el .imageContainer {
+  position: relative;
+  width: 25vw;
+  height: 25vh;
+}
+
+.container .sticky .el .imageContainer img {
+  object-fit: cover;
+}
+
+.container .sticky .el:nth-of-type(2) .imageContainer {
+  top: -30vh;
+  left: 5vw;
+  width: 35vw;
+  height: 33vh;
+}
+
+.container .sticky .el:nth-of-type(3) .imageContainer {
+  top: -10vh;
+  left: -25vw;
+  width: 20vw;
+  height: 48vh;
+}
+
+.container .sticky .el:nth-of-type(4) .imageContainer {
+  left: 27.5vw;
+  width: 25vw;
+  height: 26vh;
+}
+
+.container .sticky .el:nth-of-type(5) .imageContainer {
+  top: 27.5vh;
+  left: 5vw;
+  width: 20vw;
+  height: 28vh;
+}
+
+.container .sticky .el:nth-of-type(6) .imageContainer {
+  top: 32.5vh;
+  left: -22.5vw;
+  width: 30vw;
+  height: 34vh;
+}
+
+.container .sticky .el:nth-of-type(7) .imageContainer {
+  top: 27.5vh;
+  left: 25vw;
+  width: 15vw;
+  height: 25vh;
+}
+
+.section {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+
+.section_inner {
+  padding: 100px;
+  color: #fff;
+}
+
+.section_inner h1 {
+  font-size: 70px;
+  color: #008ecc;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 15px;
+}
+
+.section_inner h1 span {
+  font-size: 100px;
+  color: #fff;
+}
+
+.section_inner p {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.section_inner p span {
+  font-size: 80px;
+  margin-top: 20px;
+  color: #008ecc;
+}
+
+
+@media (max-width: 768px) {
+  .section_inner {
+    padding: 20px;
+  }
+
+  .section_inner h1 {
+    font-size: 35px;    
+  }
+
+  .section_inner h1 span {
+    font-size: 50px;
+  }
+
+  .section_inner p {
+    font-size: 35px;
+  }
+
+  .section_inner p span {
+    font-size: 30px;
+  }
+}

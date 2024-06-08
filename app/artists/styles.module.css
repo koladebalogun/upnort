@@ -1,0 +1,121 @@
+@font-face {
+  font-family: gr;
+  src: url(../../fonts/GR\ NORCH.otf);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #dbdbdb;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #dbdbdb;
+  z-index: 2;
+}
+
+.slide.dark {
+  background-color: #000;
+}
+
+.slide_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.slide_note {
+  color: #008ecc;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 10px;
+}
+
+.slide_note p {
+  font-size: 45px;
+  font-family: gr;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 20px;
+}
+
+.slide_content h1 {
+  font-size: 17vw;
+  font-family: gr;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #000;
+  letter-spacing: 100px;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+
+.slide.dark .slide_content h1 {
+  color: #fff;
+}
+
+.slide_img {
+  position: absolute;
+  width: 350px;
+  height: 150vh;
+  filter: saturate(0);
+}
+
+.slide_img img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 590px;
+}
+
+.slide_img_1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+.slide_img_2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+@media (max-width: 768px) {
+  .slide_img,
+  .slide_img img {
+    width: 250px; /* Adjust the width for smaller screens */
+    height: 234px; /* Maintain aspect ratio */
+    overflow: hidden;
+  }
+
+  .slide_content h1 {
+    font-size: 20vw; /* Decrease font size for smaller screens */
+    letter-spacing: 20px; /* Adjust letter spacing */
+  }
+
+  .slide_note p {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    letter-spacing: 10px; /* Adjust letter spacing */
+  }
+}
