@@ -86,7 +86,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 350px;
-  height: 590px;
+  height: 500px;
 }
 
 .slide_img_1 {
@@ -105,7 +105,7 @@
   .slide_img,
   .slide_img img {
     width: 250px; /* Adjust the width for smaller screens */
-    height: 234px; /* Maintain aspect ratio */
+    height: 350px; /* Maintain aspect ratio */
     overflow: hidden;
   }
 

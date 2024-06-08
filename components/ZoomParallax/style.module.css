@@ -127,4 +127,18 @@
   .section_inner p span {
     font-size: 30px;
   }
+
+  .container .sticky .el:nth-of-type(2) .imageContainer {
+    top: -26vh;
+    left: 5vw;
+    width: 30vw;
+    height: 25vh;
+  }
+
+  .container .sticky .el:nth-of-type(3) .imageContainer {
+    top: -10vh;
+    left: -25vw;
+    width: 20vw;
+    height: 35vh;
+  }
 }
